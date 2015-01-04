@@ -8,32 +8,31 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body>
+<body data-ng-app>
     <header>
+        <h1>Evolution of Music Carriers</h1>
         <nav>
-            <ul>
-                <li><a href="#vinyl" data-menu-top="0">Vinyl</a></li>
-                <li><a href="#reel" data-menu-top="451">Reel-to-reel audio tape</a></li>
-                <li><a href="#cassette" data-menu-top="901">Cassette</a></li>
-                <li><a href="#cd">CD</a></li>
-                <li><a href="#digital">Digital</a></li>
+            <ul ng-controller="CarrierController">
+                <li ng-repeat="c in carriers"><a href="#{{c.name}}">{{c.name}}</a></li>
             </ul>
         </nav>
     </header>
-    <div class="vinyl">
-        <a name="vinyl"></a>
-    </div>
-    <div class="reel">
-        <a name="reel"></a>
-    </div>
-    <div class="vinyl">
-        <a name="cassette"></a>
+    <div id="content" ng-controller="CarrierController">
+        <section ng-repeat="c in carriers" id="{{c.name}}">
+            <img ng-class-odd="'imgCarrierOdd'" ng-class-even="'imgCarrierEven'" class="imgCarrier" ng-src="Images{{c.img}}" alt="Foto {{c.name}}">
+            <article>
+                {{c.description}}
+            </article>
+            <audio ng-src="{{c.audio}}"></audio>
+        </section>
     </div>
     <footer>
 
     </footer>
-<script src="Scripts/skrollr.js"></script>
-<script src="Scripts/skrollr.menu.js"></script>
-<script src="Scripts/main.js"></script>
+
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/main.js"></script>
+    <script src="app/Carrier.js"></script>
+    <script src="app/CarrierController.js"></script>
 </body>
 </html>
