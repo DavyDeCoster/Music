@@ -23,7 +23,10 @@
             <article>
                 {{c.description}}
             </article>
-            <audio ng-src="{{c.audio}}"></audio>
+            <audio controls>
+                <source src="{{c.music}}" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
         </section>
     </div>
     <footer>
@@ -31,6 +34,7 @@
     </footer>
 
     <script src="Scripts/angular.min.js"></script>
+    <script src="bower_components/angular-audio/app/angular.audio.js"></script>
     <script src="Scripts/main.js"></script>
     <script src="app/Carrier.js"></script>
     <script src="app/CarrierController.js"></script>
