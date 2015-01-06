@@ -11,13 +11,20 @@
 <body data-ng-app>
     <header>
         <h1>Evolution of Music Carriers</h1>
+        <h2 ng-controller="LocationController" id="location"></h2>
         <nav>
             <ul ng-controller="CarrierController">
-                <li ng-repeat="c in carriers"><a href="#{{c.name}}">{{c.name}}</a></li>
+                <li><a>Home</a></li>
+                <li ng-repeat="c in carriers" id="menu{{c.name}}">{{c.name}}</li>
             </ul>
         </nav>
     </header>
     <div id="content" ng-controller="CarrierController">
+        <section class="visible" id="Home">
+            <article>
+                Home
+            </article>
+        </section>
         <section ng-repeat="c in carriers" id="{{c.name}}">
             <img ng-class-odd="'imgCarrierOdd'" ng-class-even="'imgCarrierEven'" class="imgCarrier" ng-src="Images{{c.img}}" alt="Foto {{c.name}}">
             <article>
@@ -34,9 +41,11 @@
     </footer>
 
     <script src="Scripts/angular.min.js"></script>
-    <script src="bower_components/angular-audio/app/angular.audio.js"></script>
-    <script src="Scripts/main.js"></script>
+    <script src="Scripts/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCP7hSxP3yOrOKr7RfD0rPsDJ5Rh9p_MX0"></script>
     <script src="app/Carrier.js"></script>
     <script src="app/CarrierController.js"></script>
+    <script src="app/LocationController.js"></script>
+    <script src="Scripts/main.js"></script>
 </body>
 </html>

@@ -3,30 +3,30 @@
     "name": "Vinyl",
     "img": "/vinyl.png",
     "description":"A gramophone record (phonograph record in American English) or vinyl record, commonly known as a 'record', is an analog sound storage medium in the form of a flat polyvinyl chloride (previously shellac) disc with an inscribed, modulated spiral groove. The groove usually starts near the periphery and ends near the center of the disc. Phonograph records are generally described by their diameter in inches (12', 10', 7'), the rotational speed in rpm at which they are played (16, 331⁄3, 45, 78), and their time capacity resulting from a combination of those parameters (LP − long playing, SP − single, EP − 12' single or extended play); their reproductive quality or level of fidelity (high-fidelity, orthophonic, full-range, etc.), and the number of audio channels provided (mono, stereo, quad, etc.). The Phonograph disc record was the primary medium used for music reproduction until late in the 20th century, replacing the phonograph cylinder record, with which it had co-existed, by the 1920s. By the late 1980s, digital media, in the form of the compact disc, had gained a larger market share, and the vinyl record left the mainstream in 1991.[1][2] They continue to be manufactured and sold in the 21st century. In 2009, 3.5 million units shipped in the United States, including 3.2 million albums, the highest number since 1998,[3] and the format retains a niche market. They are especially used by DJs and many audiophiles for numerous types of music.",
-    "music":"/vinyl.mp3"
+    "music":"audio/vinyl.mp3"
     },
   {
     "name": "Reel",
     "img": "/reel.png",
     "description":"Reel-to-reel/open-reel [audio] tape recording is the form of magnetic tape audio recording in which the recording medium is held on a reel, rather than being securely contained within a cassette. In use, the supply reel or feed reel containing the tape is mounted on a spindle; the end of the tape is manually pulled out of the reel, threaded through mechanical guides and a tape head assembly, and attached by friction to the hub of a second, initially empty takeup reel.",
-    "music":"/reel.mp3"
+    "music":"audio/reel.mp3"
   },
   {
     "name": "Cassette",
     "img": "/cassette.png",
     "description":"The Compact Cassette or Musicassette (MC), also commonly called cassette tape, audio cassette, or simply tape or cassette, is a magnetic tape recording format for audio recording and playback. Compact cassettes come in two forms, either already containing content as a pre-recorded cassette, or as fully recordable 'blank' cassette. It was designed originally for dictation machines, but improvements in fidelity led the Compact Cassette to supplant the Stereo 8-track cartridge and reel-to-reel tape recording in most non-professional applications.[1] Its uses ranged from portable audio to home recording to data storage for early microcomputers. Between the early 1970s and the late 1990s, the cassette was one of the two most common formats for prerecorded music, first alongside the LP record and later the compact disc.Compact Cassettes consist of two miniature spools, between which a magnetically coated plastic tape is passed and wound. These spools and their attendant parts are held inside a protective plastic shell. Two stereo pairs of tracks (four total) or two monaural analog audio tracks are available on the tape; one stereo pair or one monophonic track is played or recorded when the tape is moving in one direction and the second pair when moving in the other direction. This reversal is achieved either by manually flipping the cassette, or by having the machine itself change the direction of tape movement and head respectively ('auto-reverse').",
-    "music":"/cassette.mp3"
+    "music":"audio/cassette.mp3"
   },
   {
     "name": "CD",
     "img": "/cd.png",
     "description":"Compact disc (CD) is a digital optical disc data storage format. The format was originally developed to store and play only sound recordings but was later adapted for storage of data (CD-ROM). Several other formats were further derived from these, including write-once audio and data storage (CD-R), rewritable media (CD-RW), Video Compact Disc (VCD), Super Video Compact Disc (SVCD), Photo CD, PictureCD, CD-i, and Enhanced Music CD. Audio CDs and audio CD players have been commercially available since October 1982. Standard CDs have a diameter of 120 millimetres (4.7 in) and can hold up to about 80 minutes of uncompressed audio or about 700 MiB of data. The Mini CD has various diameters ranging from 60 to 80 millimetres (2.4 to 3.1 in); they are sometimes used for CD singles, storing up to 24 minutes of audio or delivering device drivers. At the time of the technology's introduction, an individual CD had greater capacity than a typical personal computer hard drive. The reverse is now true, with personal computer hard drives having capacities far exceeding the capacity of a CD. In 2004, worldwide sales of CD audio, CD-ROM, and CD-R reached about 30 billion discs. By 2007, 200 billion CDs had been sold worldwide. CDs are increasingly being replaced by other forms of digital storage and distribution, with the result that audio CD sales rates in the USA have dropped about 50% from their peak; however, they remain one of the primary distribution methods for the music industry.",
-    "music":"/cd.mp3"
+    "music":"audio/cd.mp3"
   },
   {
     "name": "Digital",
     "img": "/digital.png",
-    "description":"lorem ipsum boy!!",
-    "music":"/digital.mp3"
+    "description":"Digital audio is technology that can be used to record, store, generate, manipulate, and reproduce sound using audio signals encoded in digital form. Following significant advances in digital audio technology during the 1970s, it rapidly replaced analog audio technology in most areas of sound production, sound engineering and telecommunications. A microphone converts sound to an analog electrical signal, then an analog-to-digital converter (ADC)—typically using pulse-code modulation—converts the analog signal into a digital signal. A digital-to-analog converter performs the reverse process, converting a digital signal back into an analog signal, which analog circuits amplify and send to a loudspeaker. Digital audio systems may include compression, storage, processing and transmission components. Conversion to a digital format allows convenient manipulation, storage, transmission and retrieval of an audio signal.",
+    "music":"audio/digital.mp3"
   }
 ]
