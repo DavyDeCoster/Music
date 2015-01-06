@@ -1,11 +1,13 @@
 var sections;
 var audios;
+var imgs;
 $(document).ready(function(){
 
     var interval = setInterval(function() {
 
         if ($('section').size() == 6) {
             addMenu();
+            addAudioListeners();
             clearInterval(interval);
         }
 
@@ -23,16 +25,55 @@ function addMenu(){
     }
 }
 
+function addAudioListeners()
+{
+    audios = document.getElementsByTagName('audio');
+
+    for(var i = 0, len = audios.length; i<len; i++)
+    {
+        audios[i].addEventListener('play',animateImgClass);
+
+        audios[i].addEventListener('pause',stopImgClass);
+    }
+}
+
+function animateImgClass()
+{
+    if(imgs == null){
+        imgs = document.getElementsByTagName('img');
+    }
+
+    for(var i = 0, len = imgs.length; i < len; i++)
+    {
+        if(imgs[i].alt != 'Foto Cassette' && imgs[i].alt != 'Foto Digital')
+        {
+            imgs[i].className = 'imgCarrier Animate';
+        }
+    }
+}
+
+function stopImgClass()
+{
+    if(imgs == null){
+        imgs = document.getElementsByTagName('img');
+    }
+
+    for(var i = 0, len = imgs.length; i < len; i++)
+    {
+        imgs[i].className = 'imgCarrier';
+    }
+}
+
 function setClassName(s,li)
 {
-    li.onclick = function(){
+    li.addEventListener('click',function(){
         if(s.className == 'ng-scope')
         {
             everythingInvisible();
             muteEverything();
             s.className = 'ng-scope visible';
         }
-    }
+    });
 }
 
 function everythingInvisible()
@@ -45,14 +86,8 @@ function everythingInvisible()
 
 function muteEverything()
 {
-    if(audios==null)
-    {
-        audios = document.getElementsByTagName('audio');
-    }
-
     for(var i = 0, len = audios.length; i<len; i++)
     {
             audios[i].pause();
     }
 }
-
