@@ -46,7 +46,7 @@ a{
     text-decoration: none;
 }
 
-li:hover{
+a:hover{
     color:lightgrey;
     text-decoration: none;
 }
@@ -102,13 +102,12 @@ section
 article
 {
     display: inline;
-    height: 100%;
 }
 
 audio
 {
     margin: 10px;
-    display: inline;
+    display: block;
 }
 
 .visible {
@@ -118,7 +117,7 @@ audio
     -webkit-transition: opacity 1s ease-out;
 }
 
-@media all and (max-device-width: 750px){
+@media all and (max-width: 750px){
 
     header > h2{
         display: none;

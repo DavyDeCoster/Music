@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 <body data-ng-app>
@@ -15,8 +15,8 @@
         <h2 ng-controller="LocationController" id="location"></h2>
         <nav>
             <ul ng-controller="CarrierController">
-                <li><a>Home</a></li>
-                <li ng-repeat="c in carriers" id="menu{{c.name}}">{{c.name}}</li>
+                <li><a href="#">Home</a></li>
+                <li ng-repeat="c in carriers" id="menu{{c.name}}"><a href="#">{{c.name}}</a></li>
             </ul>
         </nav>
     </header>

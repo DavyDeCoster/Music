@@ -5,7 +5,7 @@ $(document).ready(function(){
 
     var interval = setInterval(function() {
 
-        if ($('section').size() == 6) {
+        if ($('section').size() > 4) {
             addMenu();
             addAudioListeners();
             clearInterval(interval);
